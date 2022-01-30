@@ -2,6 +2,9 @@
 
 ## Sumário
 
+* [Introdução](#introdução)
+
+
 ## Introdução
 
 Você muito provavelmente já sabe programar no [paradigma 
@@ -28,13 +31,13 @@ idades_animais = [1, 9]
 pesos_animais = [7.1, 15.0]
 
 for i in range(2):
-	print(
-		'Nome: %s Idade: %d Peso: %f' % (
-			nomes_animais[i], 
-			idades_animais[i], 
-			pesos_animais[i]
-		)
-	)
+    print(
+        'Nome: %s Idade: %d Peso: %f' % (
+            nomes_animais[i], 
+            idades_animais[i], 
+            pesos_animais[i]
+        )
+    )
 ```
 
 Perceba que este código não é muito elegante, pois muitas 
@@ -61,24 +64,24 @@ da seguinte forma:
 
 ```python
 class Animal(object):
-	def __init__(self, nome, idade, peso):
-		self.nome = nome
-		self.idade = idade
-		self.peso = peso
+    def __init__(self, nome, idade, peso):
+        self.nome = nome
+        self.idade = idade
+        self.peso = peso
 
-	def print(self):
-		print('Nome: %s Idade: %d Peso: %f' % (
-				self.nome, self.idade, self.peso
-			)
-		)
+    def print(self):
+        print('Nome: %s Idade: %d Peso: %f' % (
+                self.nome, self.idade, self.peso
+            )
+        )
 
 animais = [
-	Animal('Frida', 1, 7.1),
-	Animal('Poly', 9, 15.0),
+    Animal('Frida', 1, 7.1),
+    Animal('Poly', 9, 15.0),
 ]
 
 for animal in animais:
-	animal.print()
+    animal.print()
 ```
 
 Você não precisa entender tudo o que está acontecendo no 
