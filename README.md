@@ -254,13 +254,13 @@ class Animal(object):
 
 class AnimalTerrestre(Animal):
     def __init__(self, nome, idade, peso, n_patas):
-        super(Animal, self).__init__()
+        super().__init__(nome, idade, peso)
         self.n_patas = n_patas
 ```
 
 Perceba como estamos reaproveitando o `__init__` de
 Animal dentro do `__init__` de AnimalTerrestre, através
-do uso de `super(Animal, self).__init__()`.
+do uso de `super().__init__(nome, idade, peso)`.
 
 Para instanciar um novo objeto da classe AnimalTerrestre,
 usamos o seguinte código-fonte:
@@ -279,6 +279,8 @@ Nome: Frida Patas: 4
 ## Resumo
 
 ## Código-fonte
+
+* [part_1.py](src/part_1.py)
 
 ## Referências
 
