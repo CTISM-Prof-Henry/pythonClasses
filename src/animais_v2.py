@@ -10,20 +10,27 @@ class Animal(object):
             )
         )
 
+    @classmethod
+    def from_other(cls, other):
+        return cls(other.nome, other.idade, other.peso)
+
+
 class AnimalTerrestre(Animal):
     def __init__(self, nome, idade, peso, n_patas):
         super().__init__(nome, idade, peso)
         self.n_patas = n_patas
 
-    def respira(self):
+    @staticmethod
+    def respira():
         return 'respirando'
 
 
 def main():
-    var1 = AnimalTerrestre('Frida', 1, 7.1, 4)
-    var1.print()
-    print(var1.respira())
-    print('número de patas:', var1.n_patas)
+    primeiro = Animal('Frida', 1, 7.1)
+    segundo = Animal.from_other(primeiro)
+    primeiro.print()
+    segundo.print()
+    print(primeiro.respira())
 
 
 if __name__ == '__main__':
