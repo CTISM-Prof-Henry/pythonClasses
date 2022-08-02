@@ -11,7 +11,8 @@
   * [Métodos Estáticos](capítulos/métodos_especiais.md#métodos-estáticos)
   * [Métodos de Classe](capítulos/métodos_especiais.md#métodos-de-classe)
   * [Outros métodos importantes](capítulos/métodos_especiais.md#outros-métodos-importantes)
-* [Código-fonte](#cdigo-fonte)
+* [Código-fonte](#código-fonte)
+* [Instruções](#instruções)
 * [Exercícios](capítulos/exercícios/README.md)
 * [Referências](#referências)
 
@@ -106,6 +107,19 @@ Os códigos-fonte usado nos tutoriais deste repositório estão disponíveis nos
 * [animais.py](src/animais.py)
 * [animais_v2.py](src/animais_v2.py)
 * [pessoas.py](src/pessoas.py)
+
+## Instruções
+
+Você precisará seguir esse passo-a-passo para fazer alguns dos [Exercícios](capítulos/exercícios/README.md). 
+
+1. Clone este repositório na sua máquina
+2. [Crie um ambiente virtual do anaconda para trabalhar](
+   https://github.com/CTISM-Prof-Henry/pythonEssentials/blob/main/chapters/venvs.md#criando-pela-linha-de-comando)
+3. Após ter criado o ambiente virtual e ativado-o, instale
+   a biblioteca `twitter`: `pip install twitter==1.19.3`
+4. Para executar os códigos-fontes, [abra a pasta deste repositório no Pycharm.](
+   https://github.com/CTISM-Prof-Henry/pythonEssentials/blob/main/chapters/venvs.md#usando-pelo-pycharm)
+
 
 ## Referências
 
