@@ -37,6 +37,25 @@ os gabaritos inalterados.
    1
    ```
 
-2. Usando os métodos `__enter__` e `__exit__`, crie um **contexto**. Um contexto é usado junto com o comando `with` 
-   para manipular corretamente a abertura e fechamento. Neste exercício, você fará uso de uma biblioteca auxiliar para 
-   baixar os tweets do mestre Ye nos últimos 5 dias.
+2. Usando os métodos `__enter__` e `__exit__`, e o [código-fonte disponibilizado](exercicio_3.py), crie um **contexto**. 
+   Um contexto é usado junto com o comando `with` para manipular corretamente a abertura e fechamento. Neste exercício, 
+   você fará uso de uma biblioteca auxiliar para baixar os tweets do mestre Ye nos últimos 5 dias.
+3. Crie uma classe `Album`. A classe álbum deverá possuir **no mínimo** os atributos `nome` e `artista`. Crie 11 
+   instâncias da classe `Album`, uma para cada Álbum do Kanye West. Sobrescreva os métodos `__ne__`, `__eq__`, `__ge__`, 
+   `__gt__`, `__le__`, `__lt__`, e `__str__`. Quando rodar o código de [exercicio_3.py](exercicio_3.py), a saída na tela
+   deverá ser a seguinte:
+
+   ```
+                        Ordem cronológica                     Melhor ao pior
+    0                 The College Dropout  My Beautiful Dark Twisted Fantasy
+    1                   Late Registration                         Graduation
+    2                          Graduation                  The Life of Pablo
+    3                   808s & Heartbreak                The College Dropout
+    4   My Beautiful Dark Twisted Fantasy                  Late Registration
+    5                    Watch the Throne                             Yeezus
+    6                              Yeezus                    KIDS SEE GHOSTS
+    7                   The Life of Pablo                   Watch the Throne
+    8                                  ye                                 ye
+    9                     KIDS SEE GHOSTS                  808s & Heartbreak
+    10                      JESUS IS KING                      JESUS IS KING
+   ```
