@@ -2,6 +2,7 @@ import pandas as pd
 
 
 class Album(object):
+    # TODO modifique este trecho
     def __init__(self):
         pass
 
@@ -25,6 +26,7 @@ class Album(object):
 
     def __str__(self):
         return "Título do álbum não-definido"
+    # TODO modifique este trecho
 
 
 def main():
@@ -36,7 +38,10 @@ def main():
 
     rankings = [4, 5, 2, 10, 1, 8, 6, 3, 9, 7, 11]
 
+    # TODO modifique este trecho
     albuns = [Album() for nome, ranking in zip(nome_albuns, rankings)]
+    # TODO modifique este trecho
+
     ordenados = list(sorted(albuns))
 
     df = pd.DataFrame({'Ordem cronológica': albuns, 'Melhor ao pior': ordenados})
