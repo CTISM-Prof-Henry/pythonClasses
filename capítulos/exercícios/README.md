@@ -37,9 +37,18 @@ os gabaritos inalterados.
    1
    ```
 
-2. Usando os métodos `__enter__` e `__exit__`, e o [código-fonte disponibilizado](exercicio_3.py), crie um **contexto**. 
-   Um contexto é usado junto com o comando `with` para manipular corretamente a abertura e fechamento. Neste exercício, 
-   você fará uso de uma biblioteca auxiliar para baixar os tweets do mestre Ye nos últimos 5 dias.
+2. Usando os métodos `__enter__` e `__exit__`, e o [código-fonte disponibilizado](exercicio_2.py), crie um **contexto**. 
+   Um contexto é usado junto com o comando `with` para manipular corretamente a abertura e fechamento. A saída esperada 
+   quando rodamos o código-fonte de [exercicio_2.py](exercicio_2.py) deverá ser a seguinte:
+
+   ```
+   colocando ideias na cabeça do Ye
+   entrando na cabeça do Ye
+   *Ye está pensando coisas*
+   saindo na cabeça do Ye
+   *Ye parou de pensar coisas*
+   ```
+
 3. Crie uma classe `Album`. A classe álbum deverá possuir **no mínimo** os atributos `nome` e `artista`. Crie 11 
    instâncias da classe `Album`, uma para cada Álbum do Kanye West. Sobrescreva os métodos `__ne__`, `__eq__`, `__ge__`, 
    `__gt__`, `__le__`, `__lt__`, e `__str__`. Quando rodar o código de [exercicio_3.py](exercicio_3.py), a saída na tela
