@@ -11,6 +11,8 @@ primeiro exercício).
 Você **pode e deve** modificar os arquivos _template_, pois isto faz parte da resolução dos exercícios, mas deve deixar 
 os gabaritos inalterados.
 
+Mais exercícios sobre classes estão disponíveis no [PythonBrasil](https://wiki.python.org.br/ExerciciosClasses).
+
 ## Enunciados
 
 1. Usando o [código-fonte disponibilizado](exercicio_1.py), crie um iterator infinito. O iterador infinito recebe três 
